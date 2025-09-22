@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Mobile</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body class="body-style">
+    <!-- Spacer -->
+    <header class="container py-4">
+        .
+    </header>
+
+    <!-- Calculator -->
+    <main>
+
+        <!-- Mobile View -->
+        <section class="d-block d-sm-none">
+            
+            <!-- Result displayier -->
+            <div class="mx-4 display-container">
+            <input class="result mx-auto py-3 w-100" id="result" value="" placeholder="0" />
+            </div>
+
+            <!-- Calculator body with buttons -->
+            <section class="calc-body container fixed-bottom border-radius-top">
+    
+                <div class="d-flex justify-content-between align-items-center my-3 gap-2">
+                    <button onclick="clearDisplay()" class="c" id="canc">C</button>
+                </div>
+    
+                <div class="d-flex justify-content-between align-items-center my-3 gap-2">
+                    <button onclick="toDisplay('7')" class="general-radius" id="seven">7</button>
+                    <button onclick="toDisplay('8')" class="general-radius" id="eight">8</button>
+                    <button onclick="toDisplay('9')" class="general-radius" id="nine">9</button>
+                    <button onclick="toDisplay('/')" class="general-radius" id="divide">:</button>
+                </div>
+    
+                <div class="d-flex justify-content-between align-items-center my-3 gap-2">
+                    <button onclick="toDisplay('4')" class="general-radius" id="four">4</button>
+                    <button onclick="toDisplay('5')" class="general-radius" id="five">5</button>
+                    <button onclick="toDisplay('6')" class="general-radius" id="six">6</button>
+                    <button onclick="toDisplay('*')" class="general-radius" id="multiply">X</button>
+                </div>
+    
+                <div class="d-flex justify-content-between align-items-center my-3 gap-2">
+                    <button onclick="toDisplay('1')" class="general-radius" id="one">1</button>
+                    <button onclick="toDisplay('2')" class="general-radius" id="two">2</button>
+                    <button onclick="toDisplay('3')" class="general-radius" id="three">3</button>
+                    <button onclick="toDisplay('+')" class="general-radius" id="plus">+</button>
+                </div>
+    
+                <div class="d-flex justify-content-between align-items-center my-3 gap-2">
+                    <button onclick="toDisplay('0')" class="bs" id="zero">0</button>
+                    <button onclick="toDisplay('.')" class="general-radius"  id="dot">.</button>
+                    <button onclick="calc()" class="general-radius"  id="equals">=</button>
+                    <button onclick="toDisplay('-')" class="be" id="minus">-</button>
+                </div>
+            
+            </section>
+        
+        </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

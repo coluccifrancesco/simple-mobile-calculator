@@ -1,0 +1,98 @@
+:root {
+
+    --text-color: #e4e6e9;
+    --bg-color: #0b0d12;
+    --prim-color: #a5b3d6;
+    --sec-color: #27417d;
+    --acc-color: #4d77db;
+}
+
+.body-style {
+    background-color: var(--sec-color);
+}
+
+header {
+    color: transparent;
+}
+
+.display-container {
+
+    background-color: var(--prim-color);
+    border-radius: 30px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.601);
+    
+    input{
+        border: none;
+        background-color: transparent;
+        font-size: 60px;
+        padding: 0 30px;
+    }
+}
+
+.calc-body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 40px;
+
+    button {
+        text-align: center;
+        border: none;
+        background-color: var(--sec-color);
+        color: var(--text-color);
+        font-weight: bold;
+        padding: 10px 30px;
+        width: 100%;
+        transition: 0.2s;
+
+        &:hover {
+            background-color: var(--prim-color);
+            color: var(--bg-color);
+        }
+
+        &:active {
+            background-color: transparent;
+        }
+    }
+
+    .c {
+        width: 23%;
+        background-color: var(--acc-color);
+        color: var(--text-color);
+        border-top-left-radius: 25px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        &:hover {
+            background-color: var(--prim-color);
+            color: var(--bg-color);
+        }
+
+        &:active {
+            background-color: transparent;
+        }
+    }
+}
+
+.border-radius-top {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+
+.general-radius {
+    border-radius: 10px;
+}
+
+.bs {
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.be {
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
